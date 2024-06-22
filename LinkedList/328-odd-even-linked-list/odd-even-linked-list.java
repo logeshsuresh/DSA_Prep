@@ -27,6 +27,7 @@ class Solution {
                 evenPtr.next = temp;
                 evenPtr = evenPtr.next;
             } else {
+                // odd index
                 oddPtr.next = temp;
                 oddPtr = oddPtr.next;
             }
