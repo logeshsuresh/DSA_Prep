@@ -10,7 +10,7 @@ This repository contains questions and solutions for the following topics:
 - **Two Pointers** (// todo)
 - **Linked List**
 - **Trees** (// todo)
-- **Stack & Queue** (// todo)
+- **Stack & Queue** 
 - **Heaps** (// todo)
 - **Dynamic Programming** (// todo)
 - **Graphs** (// todo)
