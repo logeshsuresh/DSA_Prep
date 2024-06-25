@@ -28,12 +28,12 @@ class Solution {
             }
         }
 
-        String output = "";
+        StringBuilder output = new StringBuilder();
 
         while (!stack.isEmpty()) {
-            output = stack.pop() + output;
+            output.insert(0, stack.pop());
         }
 
-        return output;
+        return output.toString();
     }
 };
