@@ -11,11 +11,8 @@ class Solution {
                     curVal += stack.pop();
                 }
                 stack.pop();
-                if (curVal == 0) {
-                    stack.push(1);
-                } else {
-                    stack.push(2 * curVal);
-                }
+                curVal = (curVal == 0) ? 1 : (2 * curVal);
+                stack.push(curVal);
             }
         }
 
