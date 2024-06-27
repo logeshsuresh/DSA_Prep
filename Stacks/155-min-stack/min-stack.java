@@ -1,8 +1,8 @@
 class MinStack {
-
-    Stack<Pair> stack;
     private static final int INF = Integer.MAX_VALUE;
 
+    Stack<Pair> stack;
+    
     public MinStack() { stack = new Stack<>(); }
     
     public void push(int val) {
