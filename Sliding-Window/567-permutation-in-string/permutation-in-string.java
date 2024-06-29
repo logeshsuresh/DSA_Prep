@@ -37,10 +37,7 @@ class Solution {
             }
 
             if (end - start + 1 == windowSize) {
-                if (distinctCnt == 0) { 
-                    System.out.println(s2.substring(start, end + 1));
-                    return true; 
-                }
+                if (distinctCnt == 0) { return true; }
             }
 
             end++;
