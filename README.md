@@ -6,7 +6,7 @@ Welcome to the DSA Interview Prep repository! This repository is designed to hel
 
 This repository contains questions and solutions for the following topics:
 
-- **Sliding Window** (// todo)
+- **Sliding Window** 
 - **Two Pointers** (// todo)
 - **Linked List**
 - **Trees** (// todo)
