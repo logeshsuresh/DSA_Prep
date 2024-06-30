@@ -1,31 +1,31 @@
 class Solution {
     public int totalFruit(int[] fruits) {
-        int start = 0, end = 0, n = fruits.length;
-        Map<Integer, Integer> fruitBasket = new HashMap<>();
+        int n = fruits.length;
+
+        int start = 0, end = 0;
+
+        Map<Integer, Integer> fruitBasket = new HashMap<>(); // size of 2
+
         int maxFruits = 0;
 
         while (end < n) {
-            int curFruit = fruits[end];
+            int fruit = fruits[end];
 
-            if (fruitBasket.containsKey(curFruit)) {
-                fruitBasket.put(curFruit, fruitBasket.get(curFruit) + 1);
-            } else {
-                fruitBasket.put(curFruit, 1);
-            }
+            fruitBasket.put(fruit, fruitBasket.getOrDefault(fruit, 0) + 1);
 
             while (fruitBasket.size() > 2 && start <= end) {
-                    int fruitAtStart = fruits[start];
-                    int curFruitQty = fruitBasket.get(fruitAtStart);
-                    fruitBasket.put(fruitAtStart, curFruitQty - 1);
-                    if (fruitBasket.get(fruitAtStart) == 0) {
-                        fruitBasket.remove(fruitAtStart);
-                    }
-                    start ++;
+                int fruitAtStart = fruits[start];
+                int cnt = fruitBasket.get(fruitAtStart);
+                fruitBasket.put(fruitAtStart, cnt - 1);
+                if (cnt - 1 == 0) { 
+                    fruitBasket.remove(fruitAtStart); 
+                }
+                start++;
             }
-            
+
             maxFruits = Math.max(maxFruits, end - start + 1);
 
-            end ++;
+            end++;
         }
 
         return maxFruits;
