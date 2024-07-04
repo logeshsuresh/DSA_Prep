@@ -9,7 +9,7 @@ This repository contains questions and solutions for the following topics:
 - **Sliding Window** 
 - **Two Pointers** (// todo)
 - **Linked List**
-- **Trees** (// todo)
+- **Trees** 
 - **Stack & Queue** 
 - **Heaps** (// todo)
 - **Dynamic Programming** (// todo)
