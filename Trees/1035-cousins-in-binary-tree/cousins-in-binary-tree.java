@@ -15,8 +15,6 @@
  */
 class Solution {
     public boolean isCousins(TreeNode root, int x, int y) {
-        int curLevel = 0;
-
         Queue<Pair> queue = new LinkedList<>();
 
         queue.add(new Pair(root, null));
@@ -38,7 +36,6 @@ class Solution {
                 int parentOfY = nodeParentMap.get(y).val;
                 if (parentOfX != parentOfY) { return true; }
             }
-            curLevel++;
         }
 
         return false;
