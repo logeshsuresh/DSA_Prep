@@ -30,6 +30,5 @@ class Solution {
         maxPathSum[0] = Math.max(maxPathSum[0], leftSum + rightSum + root.val);
 
         return root.val  + Math.max(leftSum, rightSum);
-
     }
 }
