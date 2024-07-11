@@ -26,6 +26,7 @@ class Solution {
         if (numSet.contains(k - root.val)) { return true; }
 
         numSet.add(root.val);
+        
         boolean left = f(root.left, numSet, k);
         boolean right = f(root.right, numSet, k);
 
