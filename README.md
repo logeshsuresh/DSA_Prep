@@ -11,7 +11,7 @@ This repository contains questions and solutions for the following topics:
 - **Linked List**
 - **Trees** 
 - **Stack & Queue** 
-- **Heaps** (// todo)
+- **Heaps** 
 - **Dynamic Programming** (// todo)
 - **Graphs** (// todo)
 - **Bit Manipulation** (// todo)
