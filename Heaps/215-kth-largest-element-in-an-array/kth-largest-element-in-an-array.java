@@ -4,9 +4,7 @@ class Solution {
 
         for (int num : nums) {
             pq.offer(num);
-            if (pq.size() > k) {
-                pq.poll();
-            }
+            if (pq.size() > k) { pq.poll(); }
         }
 
         int kthLargest = pq.poll();
