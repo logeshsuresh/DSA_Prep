@@ -15,9 +15,10 @@ class MedianFinder {
             minHeap.offer(num);
         }
 
-        if (maxHeap.size() > minHeap.size() + 1) {
+        // balance the heaps [maxHeap can be greater than minHeap only by size 1]
+        if (maxHeap.size() > minHeap.size() + 1) { // maxHeap.size() > minHeap.size() + 1 -> [Eg : maxHeap.size() = 3 & minHeap.size() = 1]
             minHeap.offer(maxHeap.poll());
-        } else  if (minHeap.size() > maxHeap.size()) {
+        } else  if (minHeap.size() > maxHeap.size()) { // [minHeap size should not be greater than maxHeap size]
             maxHeap.offer(minHeap.poll());
         }
     }
