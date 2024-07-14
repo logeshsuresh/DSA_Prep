@@ -3,14 +3,11 @@ class Solution {
     public boolean isNStraightHand(int[] hand, int groupSize) {
         int n = hand.length;
 
-        if (n % groupSize != 0) {
-            return false;
-        }
+        if (n % groupSize != 0) { return false; }
 
         Map<Integer, Integer> numCount = new HashMap<>();
-        for (int num : hand) {
-            numCount.put(num, numCount.getOrDefault(num, 0) + 1);
-        }
+
+        for (int num : hand) { numCount.put(num, numCount.getOrDefault(num, 0) + 1); }
 
         PriorityQueue<Integer> pq = new PriorityQueue<>(numCount.keySet());
 
